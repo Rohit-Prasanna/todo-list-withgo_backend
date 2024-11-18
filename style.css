@@ -1,0 +1,131 @@
+body {
+
+    background-image: url("546902.jpg");
+height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gugi';
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.tit {
+    margin-top: 20vh;
+    align-self: center;
+
+
+}
+
+.tit > h1 {
+    align-self: center;
+    margin-left: 230px;
+    font-size: 60px;
+}
+input {
+    margin: 10;
+    border: 60;
+    border-radius: 12px;
+    width: 173px;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+ .tpk{
+    width: 330px;
+    font-family: 'Gugi';   
+  }
+.dt{
+    width: 210px;
+    font-family: 'Gugi';
+}
+.addbtn {
+    padding: 10px;
+    width: 25%;
+    background: #0f0e0e;
+    color: rgb(237, 231, 231);
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0;
+    margin-left: 300px;
+    align-self: center;
+    margin-bottom: 20px; /* Add margin-bottom to create a gap */
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .clrall{
+    font-family: 'Gugi';
+    width: 200px;
+    padding: 8px;
+    font-size: large;
+    cursor: pointer;
+ 
+    align-self: auto;
+    align-items: center ; 
+    margin-bottom: auto; 
+  }
+
+  /* ul {
+    list-style: none;
+  }
+
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgba(153, 153, 153, 0.7);
+    border-radius: 12px;
+    font-size: 18px;
+    transition: 0.2s;
+  
+  } */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgba(153, 153, 153, 0.7);
+    border-radius: 12px;
+    font-size: 18px;
+    transition: 0.2s;
+    margin-bottom: 10px; /* Add margin-bottom for the gap */
+  }
+  
+  .checked {
+    background: rgb(140, 222, 140);
+    opacity: 0.6;
+  } 
+  .topic{
+    display: flex;
+    justify-content: space-between;
+  }
+.drpbtn{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+  
