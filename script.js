@@ -11,7 +11,7 @@ window.onload = function() {
 
 // Function to fetch todos from the backend API
 function fetchTodos() {
-  fetch('https://todo-api-wgkw.onrender.com/todos')  // Updated API URL for Render
+  fetch('https://todo-api-wgkw.onrender.com/api/todos')  // Updated API URL for Render
     .then(response => response.json())
     .then(data => {
       todos = data;
@@ -64,7 +64,7 @@ function toggleDropdown(id) {
 
 // Delete a todo item via API
 function deleteItem(id) {
-  fetch(`https://todo-api-wgkw.onrender.com/todos/${id}`, {  // Updated API URL for Render
+  fetch(`https://todo-api-wgkw.onrender.com/api/todos/${id}`, {  // Updated API URL for Render
     method: 'DELETE',
   })
     .then(() => {
@@ -79,7 +79,7 @@ function checkItem(id) {
   const todo = todos.find(todo => todo.id === id);
   const updatedTodo = { ...todo, checked: true };
 
-  fetch(`https://todo-api-wgkw.onrender.com/todos/${id}`, {  // Updated API URL for Render
+  fetch(`https://todo-api-wgkw.onrender.com/api/todos/${id}`, {  // Updated API URL for Render
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ function onAddButtonClicked() {
     dropdown: false,
   };
 
-  fetch('https://todo-api-wgkw.onrender.com/todos', {  // Updated API URL for Render
+  fetch('https://todo-api-wgkw.onrender.com/api/todos', {  // Updated API URL for Render
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ function onAddButtonClicked() {
 
 // Clear all todos (Optional feature)
 function clearAll() {
-  fetch('https://todo-api-wgkw.onrender.com/todos', {  // Updated API URL for Render
+  fetch('https://todo-api-wgkw.onrender.com/api/todos', {  // Updated API URL for Render
     method: 'DELETE',  // This will delete all todos from the database
   })
     .then(() => {
@@ -149,7 +149,7 @@ function editItem(id) {
   if (newTitle !== null) {
     const updatedTodo = { ...todo, title: newTitle, date: newDate, time: newTime };
 
-    fetch(`https://todo-api-wgkw.onrender.com/todos/${id}`, {  // Updated API URL for Render
+    fetch(`https://todo-api-wgkw.onrender.com/api/todos/${id}`, {  // Updated API URL for Render
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
