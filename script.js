@@ -8,7 +8,7 @@ let todos = [];
 const userId= "user-id"
 
 // Backend API base URL
-const API_URL = "http://localhost:8080/api/todos";
+const API_URL = "https://todo-api-wgkw.onrender.com/api/todos";
 
 window.onload = function () {
   fetchTodos();
